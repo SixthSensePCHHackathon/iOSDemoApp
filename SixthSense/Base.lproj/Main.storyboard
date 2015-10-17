@@ -135,10 +135,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="BPx-sm-rEl">
-                                <rect key="frame" x="0.0" y="64" width="375" height="563"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="363"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mws-0r-Ag7">
-                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mws-0r-Ag7">
+                                <rect key="frame" x="0.0" y="637" width="375" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="FRk-ys-Gr3"/>
                                 </constraints>
@@ -149,10 +149,16 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yCV-i0-gSU">
-                                <rect key="frame" x="167" y="305.5" width="40" height="40"/>
+                                <rect key="frame" x="167" y="206" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="Cph-Vy-vft"/>
                                     <constraint firstAttribute="height" constant="40" id="R6f-1C-TxI"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DnK-Me-go5">
+                                <rect key="frame" x="0.0" y="427" width="375" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="VGo-r0-sru"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -164,16 +170,27 @@
                             <constraint firstItem="yCV-i0-gSU" firstAttribute="centerY" secondItem="BPx-sm-rEl" secondAttribute="centerY" constant="-20" id="QLX-9b-2bL"/>
                             <constraint firstItem="Mws-0r-Ag7" firstAttribute="top" secondItem="BPx-sm-rEl" secondAttribute="bottom" id="SLt-uK-hXT"/>
                             <constraint firstItem="Mws-0r-Ag7" firstAttribute="centerX" secondItem="10A-tX-c09" secondAttribute="centerX" id="UIh-01-NLn"/>
+                            <constraint firstItem="DnK-Me-go5" firstAttribute="top" secondItem="BPx-sm-rEl" secondAttribute="bottom" id="Up1-dw-Pwn"/>
+                            <constraint firstItem="DnK-Me-go5" firstAttribute="centerX" secondItem="10A-tX-c09" secondAttribute="centerX" id="azV-ke-okP"/>
                             <constraint firstItem="BPx-sm-rEl" firstAttribute="top" secondItem="JaW-xo-3G6" secondAttribute="bottom" id="cP3-sg-gwe"/>
                             <constraint firstItem="QO4-L5-zv8" firstAttribute="top" secondItem="Mws-0r-Ag7" secondAttribute="bottom" id="h9p-Lh-Uhe"/>
+                            <constraint firstItem="DnK-Me-go5" firstAttribute="width" secondItem="10A-tX-c09" secondAttribute="width" id="kYN-mK-9VI"/>
                             <constraint firstItem="yCV-i0-gSU" firstAttribute="centerX" secondItem="BPx-sm-rEl" secondAttribute="centerX" id="pwe-Pb-Tnk"/>
                             <constraint firstItem="BPx-sm-rEl" firstAttribute="width" secondItem="10A-tX-c09" secondAttribute="width" id="sBi-Ot-ROo"/>
+                            <constraint firstItem="Mws-0r-Ag7" firstAttribute="top" secondItem="DnK-Me-go5" secondAttribute="bottom" id="wZL-7k-TjP"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="SLt-uK-hXT"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="currentLocationImage" destination="yCV-i0-gSU" id="Nxe-dW-kxA"/>
+                        <outlet property="gifHeightConstraint" destination="VGo-r0-sru" id="9Bq-0b-t7q"/>
                         <outlet property="mapView" destination="BPx-sm-rEl" id="kB3-zC-4st"/>
                         <outlet property="playButton" destination="Mws-0r-Ag7" id="QTQ-3L-fJE"/>
+                        <outlet property="playHeightConstraint" destination="FRk-ys-Gr3" id="kyQ-IM-Plb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yf2-57-xGs" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -49,6 +49,8 @@
     [self.mapView addAnnotation:mStartPlacemark];
     
     [HFCommander sharedCommander];
+    
+    [self setTitle:@"Nudge"];
 }
 
 -(void)mapView:(MKMapView *)mapView regionDidChangeAnimated:(BOOL)animated {

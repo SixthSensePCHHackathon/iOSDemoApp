@@ -22,6 +22,8 @@
     BOOL sentCommand;
     __weak IBOutlet UIImageView *currentLocationImage;
     __weak IBOutlet UIButton *playButton;
+    __weak IBOutlet NSLayoutConstraint *playHeightConstraint;
+    __weak IBOutlet NSLayoutConstraint *gifHeightConstraint;
 }
 @end
 
@@ -40,6 +42,9 @@ UIColor *darkBlue;
     
     speed = 20.0;
     refresh_interval = 0.1;
+    gifHeightConstraint.constant = 0.0;
+    
+    [self setTitle:@"Simulation"];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -83,7 +88,9 @@ UIColor *darkBlue;
     MKCoordinateRegion adjustedRegion = [self.mapView regionThatFits:viewRegion];
     [self.mapView setRegion:adjustedRegion animated:YES];
     
+    playHeightConstraint.constant = 0.0;
     [playButton setHidden:YES];
+    gifHeightConstraint.constant = 200.0;
     
     [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(startRoute) userInfo:nil repeats:NO];
 }
