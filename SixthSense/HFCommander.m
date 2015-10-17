@@ -95,7 +95,7 @@ NSTimer *rssiTimer;
 
 -(void) sendContinueStraight {
     if (bleShield.activePeripheral.state == CBPeripheralStateConnected) {
-        [bleShield write:[@"H50" dataUsingEncoding:NSUTF8StringEncoding]];
+        [bleShield write:[@"H51" dataUsingEncoding:NSUTF8StringEncoding]];
     }
 }
 

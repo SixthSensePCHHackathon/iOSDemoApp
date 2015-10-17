@@ -20,7 +20,7 @@
     double refresh_interval;
     NSTimer *updateTimer;
     BOOL sentCommand;
-    __weak IBOutlet UIImageView *currentLocation;
+    __weak IBOutlet UIImageView *currentLocationImage;
     __weak IBOutlet UIButton *playButton;
 }
 @end
@@ -32,6 +32,7 @@
 @synthesize mEndPlacemark;
 MKPlacemark *currentPlacemark;
 @synthesize _currentRoute;
+UIColor *darkBlue;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -47,10 +48,12 @@ MKPlacemark *currentPlacemark;
 
 - (void)plotRouteOnMap
 {
+    darkBlue = [UIColor colorWithRed:0.04313 green:0.2392 blue:0.3725 alpha:1.0];
     self.mapView.delegate = self;
     
     [self.mapView addAnnotation:mEndPlacemark];
     [self.mapView addAnnotation:mStartPlacemark];
+    [self.mapView setUserInteractionEnabled:NO];
     
     if(_routeOverlay) {
         [self.mapView removeOverlay:_routeOverlay];
@@ -70,7 +73,7 @@ MKPlacemark *currentPlacemark;
 - (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay
 {
     MKPolylineRenderer *renderer = [[MKPolylineRenderer alloc] initWithPolyline:overlay];
-    renderer.strokeColor = [UIColor redColor];
+    renderer.strokeColor = darkBlue;
     renderer.lineWidth = 4.0;
     return  renderer;
 }
@@ -86,7 +89,7 @@ MKPlacemark *currentPlacemark;
 }
 
 - (void)startRoute {
-    [currentLocation setImage:[UIImage imageNamed:@"pin"]];
+    [currentLocationImage setImage:[UIImage imageNamed:@"pin"]];
     [[HFCommander sharedCommander] setOnRoute];
     [self startNextStep];
 }

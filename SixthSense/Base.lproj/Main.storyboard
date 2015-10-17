@@ -160,6 +160,7 @@
                         <constraints>
                             <constraint firstItem="Mws-0r-Ag7" firstAttribute="width" secondItem="10A-tX-c09" secondAttribute="width" id="6a3-E0-Nmy"/>
                             <constraint firstItem="BPx-sm-rEl" firstAttribute="centerX" secondItem="10A-tX-c09" secondAttribute="centerX" id="KRZ-O5-Dh0"/>
+                            <constraint firstItem="BPx-sm-rEl" firstAttribute="leading" secondItem="yCV-i0-gSU" secondAttribute="trailing" constant="-207" id="OUK-zk-7pD"/>
                             <constraint firstItem="yCV-i0-gSU" firstAttribute="centerY" secondItem="BPx-sm-rEl" secondAttribute="centerY" constant="-20" id="QLX-9b-2bL"/>
                             <constraint firstItem="Mws-0r-Ag7" firstAttribute="top" secondItem="BPx-sm-rEl" secondAttribute="bottom" id="SLt-uK-hXT"/>
                             <constraint firstItem="Mws-0r-Ag7" firstAttribute="centerX" secondItem="10A-tX-c09" secondAttribute="centerX" id="UIh-01-NLn"/>
@@ -170,7 +171,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="currentLocation" destination="yCV-i0-gSU" id="THU-Z3-5Dt"/>
+                        <outlet property="currentLocationImage" destination="yCV-i0-gSU" id="Nxe-dW-kxA"/>
                         <outlet property="mapView" destination="BPx-sm-rEl" id="kB3-zC-4st"/>
                         <outlet property="playButton" destination="Mws-0r-Ag7" id="QTQ-3L-fJE"/>
                     </connections>
