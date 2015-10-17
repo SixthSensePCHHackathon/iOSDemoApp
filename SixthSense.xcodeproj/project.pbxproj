@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		B7D3C91B1BD184DA00D8110B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D3C91A1BD184DA00D8110B /* main.m */; };
 		B7D3C91E1BD184DA00D8110B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D3C91D1BD184DA00D8110B /* AppDelegate.m */; };
-		B7D3C9211BD184DA00D8110B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D3C9201BD184DA00D8110B /* ViewController.m */; };
+		B7D3C9211BD184DA00D8110B /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D3C9201BD184DA00D8110B /* MapViewController.m */; };
 		B7D3C9241BD184DA00D8110B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D3C9221BD184DA00D8110B /* Main.storyboard */; };
 		B7D3C9261BD184DA00D8110B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7D3C9251BD184DA00D8110B /* Assets.xcassets */; };
 		B7D3C9291BD184DA00D8110B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7D3C9271BD184DA00D8110B /* LaunchScreen.storyboard */; };
 		B7D3C9341BD184DA00D8110B /* SixthSenseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D3C9331BD184DA00D8110B /* SixthSenseTests.m */; };
+		B7D3C93F1BD1976900D8110B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D3C93E1BD1976900D8110B /* MapKit.framework */; };
+		B7D3C9411BD1977000D8110B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D3C9401BD1977000D8110B /* CoreLocation.framework */; };
+		B7D3C9471BD2452600D8110B /* RouteMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D3C9461BD2452600D8110B /* RouteMapViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B7D3C94A1BD2658000D8110B /* HFCommander.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D3C9491BD2658000D8110B /* HFCommander.m */; settings = {ASSET_TAGS = (); }; };
+		B7D3C94F1BD2661100D8110B /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D3C94D1BD2661100D8110B /* BLE.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +36,8 @@
 		B7D3C91A1BD184DA00D8110B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B7D3C91C1BD184DA00D8110B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B7D3C91D1BD184DA00D8110B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B7D3C91F1BD184DA00D8110B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B7D3C9201BD184DA00D8110B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B7D3C91F1BD184DA00D8110B /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		B7D3C9201BD184DA00D8110B /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		B7D3C9231BD184DA00D8110B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7D3C9251BD184DA00D8110B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7D3C9281BD184DA00D8110B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +45,15 @@
 		B7D3C92F1BD184DA00D8110B /* SixthSenseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SixthSenseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7D3C9331BD184DA00D8110B /* SixthSenseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SixthSenseTests.m; sourceTree = "<group>"; };
 		B7D3C9351BD184DA00D8110B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7D3C93E1BD1976900D8110B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B7D3C9401BD1977000D8110B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B7D3C9451BD2452600D8110B /* RouteMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteMapViewController.h; sourceTree = "<group>"; };
+		B7D3C9461BD2452600D8110B /* RouteMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteMapViewController.m; sourceTree = "<group>"; };
+		B7D3C9481BD2658000D8110B /* HFCommander.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFCommander.h; sourceTree = "<group>"; };
+		B7D3C9491BD2658000D8110B /* HFCommander.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFCommander.m; sourceTree = "<group>"; };
+		B7D3C94C1BD2661100D8110B /* BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
+		B7D3C94D1BD2661100D8110B /* BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
+		B7D3C94E1BD2661100D8110B /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7D3C9411BD1977000D8110B /* CoreLocation.framework in Frameworks */,
+				B7D3C93F1BD1976900D8110B /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +79,9 @@
 		B7D3C90D1BD184DA00D8110B = {
 			isa = PBXGroup;
 			children = (
+				B7D3C94B1BD2661100D8110B /* BLE */,
+				B7D3C9401BD1977000D8110B /* CoreLocation.framework */,
+				B7D3C93E1BD1976900D8110B /* MapKit.framework */,
 				B7D3C9181BD184DA00D8110B /* SixthSense */,
 				B7D3C9321BD184DA00D8110B /* SixthSenseTests */,
 				B7D3C9171BD184DA00D8110B /* Products */,
@@ -83,8 +102,12 @@
 			children = (
 				B7D3C91C1BD184DA00D8110B /* AppDelegate.h */,
 				B7D3C91D1BD184DA00D8110B /* AppDelegate.m */,
-				B7D3C91F1BD184DA00D8110B /* ViewController.h */,
-				B7D3C9201BD184DA00D8110B /* ViewController.m */,
+				B7D3C91F1BD184DA00D8110B /* MapViewController.h */,
+				B7D3C9201BD184DA00D8110B /* MapViewController.m */,
+				B7D3C9451BD2452600D8110B /* RouteMapViewController.h */,
+				B7D3C9461BD2452600D8110B /* RouteMapViewController.m */,
+				B7D3C9481BD2658000D8110B /* HFCommander.h */,
+				B7D3C9491BD2658000D8110B /* HFCommander.m */,
 				B7D3C9221BD184DA00D8110B /* Main.storyboard */,
 				B7D3C9251BD184DA00D8110B /* Assets.xcassets */,
 				B7D3C9271BD184DA00D8110B /* LaunchScreen.storyboard */,
@@ -109,6 +132,16 @@
 				B7D3C9351BD184DA00D8110B /* Info.plist */,
 			);
 			path = SixthSenseTests;
+			sourceTree = "<group>";
+		};
+		B7D3C94B1BD2661100D8110B /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				B7D3C94C1BD2661100D8110B /* BLE.h */,
+				B7D3C94D1BD2661100D8110B /* BLE.m */,
+				B7D3C94E1BD2661100D8110B /* BLEDefines.h */,
+			);
+			path = BLE;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,9 +244,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7D3C9211BD184DA00D8110B /* ViewController.m in Sources */,
+				B7D3C9211BD184DA00D8110B /* MapViewController.m in Sources */,
 				B7D3C91E1BD184DA00D8110B /* AppDelegate.m in Sources */,
 				B7D3C91B1BD184DA00D8110B /* main.m in Sources */,
+				B7D3C94F1BD2661100D8110B /* BLE.m in Sources */,
+				B7D3C9471BD2452600D8110B /* RouteMapViewController.m in Sources */,
+				B7D3C94A1BD2658000D8110B /* HFCommander.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
